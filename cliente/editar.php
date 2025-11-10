@@ -9,7 +9,7 @@ if (isset($_POST['atualizar'])) {
   $telefone = $_POST['telefone'];
   $email = $_POST['email'];
 
-  $sql = "UPDATE clientes SET nome='$nome', telefone='$telefone', email='$email' WHERE id_cliente=$id";
+  $sql = "UPDATE tb_clientes SET nome='$nome', telefone='$telefone', email='$email' WHERE id_cliente=$id";
   $conn->query($sql);
   header("Location: listar.php");
 }
